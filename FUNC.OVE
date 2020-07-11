@@ -1,0 +1,31 @@
+//program rekated to function overloading
+#include<iostream.h>
+#include<conio.h>
+int area(int ,int);    //function declaration part
+float area(int);
+//following is its defintion part
+int area(int x,int y)
+{
+return(x*y);
+}
+float area(int x)	    //for resolving function defintion by comilier
+		       //compilier used three rules
+{
+return(3.14*x*x);
+}
+//main part starting from the following as
+void main()
+{
+int p,q,r;
+clrscr();
+cout<<"for finding area of rectangle give value of length and breath"<<endl;
+cin>>p>>q;
+r=area(p,q);
+cout<<"area of rectangle is following as\n"<<r;
+cout<<"\nfor finding area of circle enter the value of radius\n";
+int d;
+cin>>d;
+float w=area(d);
+cout<<"area of circle is following as"<<endl<<w;
+getch();
+}
