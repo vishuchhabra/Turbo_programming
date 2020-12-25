@@ -169,7 +169,7 @@ int i=0;
 	cout<<"\n";
 	rec.magic();
 	gotoxy(1,10);
-	if(strcmpi(pass,"123")==0)
+	if(strcmpi(pass,"vishu")==0)
 	return;
 	else{if(strcmpi(pass,"exit")==0)
 		exit(0);
